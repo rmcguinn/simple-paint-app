@@ -13,6 +13,12 @@ let lastX = 0;
 let lastY = 0;
 let hue = 0;
 
+function welcome() {
+    alert('Click and drag on the canvas to start drawing!');
+}
+
+window.onload = welcome();
+
 function draw(e) {
     if(!isDrawing) return; //Stop function from running when user is not moused down
     console.log(e);
